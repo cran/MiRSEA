@@ -2,7 +2,7 @@
 \alias{PlotCorrelation}
 \title{Plot global microRNA(miRNA) correlation profile}
 \description{
-plot global miRNA correlation profile for weighted differential expression scores(tw-score) of miRNAs
+plot global miRNA correlation profile for differential weighted scores(dw-score) of miRNAs
 }
 \usage{
 PlotCorrelation(miRlist)

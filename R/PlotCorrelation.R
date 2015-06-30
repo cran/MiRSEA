@@ -10,7 +10,7 @@
      max.corr <- max(obs.s2n)
      min.corr <- min(obs.s2n)
 
-     x <- plot(location, obs.s2n, ylab = "Weighted Signal to Noise Ratio (tw-score)", xlab = "miR List Location", main = "miR List Correlation (tw-score) Profile", type = "l", lwd = 2, cex = 0.9, col = 1)            
+     x <- plot(location, obs.s2n, ylab = "differential weighted score(dw-score)", xlab = "miR List Location", main = "miR List Correlation (dw-score) Profile", type = "l", lwd = 2, cex = 0.9, col = 1)            
      for (s in seq(1, N, 20)) {
        lines(c(s, s), c(0, obs.s2n[s]), lwd = 3, cex = 0.9, col = colors()[12]) # shading of correlation plot
      }

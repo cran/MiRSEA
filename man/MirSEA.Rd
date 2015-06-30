@@ -2,7 +2,7 @@
 \alias{MirSEA}
 \title{Identify dysregulated pathways based on microRNA (miRNA) set enrichment analysis}
 \description{
- This function propose a novel method of miRNA set enrichment analysis(MiRSEA)to identify the dysregulated pathways by calculating the enrichment score of miRNA set which co-regulate a biological pathway}
+ This function propose a novel method of miRNA set enrichment analysis(MiRSEA)to identify the dysregulated pathways by calculating the enrichment score of miRNA set which co-regulate a biological pathway(or prior gene set)}
 \usage{
 MirSEA(input.ds, input.cls, p_value,p2miR,
 reshuffling.type = "miR.labels", nperm = 1000, 
@@ -16,7 +16,7 @@ ms.size.threshold.max = 500)
   \item{p2miR}{pathway-miRNA correlation(pmSET) profile}
   \item{reshuffling.type}{Type of permutation reshuffling: "sample.labels" or "miR.labels" (default: "miR.labels")}
   \item{nperm}{Number of random permutations (default: 1000)}
-  \item{weighted.score.type}{Enrichment correlation based weighting:When weight= 0, ES reduces to the standard Kolmogorov-Smirnov statistic,when weight=1, we are weighting the miRNAs by their tw-score normalized by the sum of the tw-scores over all of the miRNAs in the miRNA set,when weight=2,it represent over weight (default: 1)}
+  \item{weighted.score.type}{Enrichment correlation based weighting:When weight= 0, ES reduces to the standard Kolmogorov-Smirnov statistic,when weight=1, we are weighting the miRNAs by their dw-score normalized by the sum of the dw-scores over all of the miRNAs in the miRNA set,when weight=2,it represent over weight (default: 1)}
   \item{ms.size.threshold.min}{Minimum size (in miRNAs) for database miRNA sets to be considered (default: 10)}
   \item{ms.size.threshold.max}{Maximum size (in miRNAs) for database miRNA sets to be considered (default: 500)}
   }
@@ -42,6 +42,8 @@ Lu M, Shi B, Wang J, Cao Q, & Cui Q (2010) TAM: a method for enrichment and depl
 \examples{
 \dontrun{
 #get example of expression data
+#input.ds <- readLines("F:/lsy/xin data/GSE36915.gct")
+#input.cls <- readLines("F:/lsy/xin data/GSE36915.cls")
 input.ds <- GetExampleData("dataset")
 input.cls <- GetExampleData("class.labels")
 
@@ -63,9 +65,9 @@ summaryResult2 <- MirSEAresult$report.phen2
 summaryResult2[1:5,]
  
 #write the summary results of pathways to tab delimited file.
-write.table(summaryResult1,file="summaryResult1.txt",sep="\t",col.names=FALSE,row.names=FALSE)
+write.table(summaryResult1,file="summaryResult1.txt",sep="\t",row.names=FALSE)
 
-write.table(summaryResult2,file="summaryResult2.txt",sep="\t",row.names=FALSE,col.names=FALSE)
+write.table(summaryResult2,file="summaryResult2.txt",sep="\t",row.names=FALSE)
 }
 }
 \keyword{file}

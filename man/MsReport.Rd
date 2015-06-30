@@ -39,6 +39,8 @@ When users input a interesting pathway,the function MsReport can create a report
 \examples{
 \dontrun{
 #get example data
+#input.ds <- readLines("F:/lsy/xin data/GSE36915.gct")
+#input.cls <- readLines("F:/lsy/xin data/GSE36915.cls")
 input.ds <- GetExampleData("dataset")
 input.cls <- GetExampleData("class.labels")
  
