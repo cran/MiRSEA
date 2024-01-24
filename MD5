@@ -1,4 +1,4 @@
-37523160ac25976af1a8371e2b0a1aae *DESCRIPTION
+c10b0dcf0a4de76c26b762f336ffa89f *DESCRIPTION
 19802e90a06755e33b3bc1301e44c349 *NAMESPACE
 e1d573efe32a53aa3dbf5fb901492b08 *R/Corrp2miRfile.R
 f60b4859be3ae436dddee8c0ec5a7db0 *R/EnrichmentScore.R
@@ -12,9 +12,11 @@ f4717384756416fb56d488c735fcc663 *R/GetExampleData.R
 d78e495ef684a8961d2740ef0e296b12 *R/PlotRunEnrichment.R
 5a4b6b3f0986156c48627bf6c70c678c *R/S2N.R
 317314deb96f9a0a2939c0301584f20b *R/getEnvironmentData.R
-6a36f13dff7de5a8fbc889610b0d684f *data/envData.rda
+35de4be42221cf2a18c54e5cc853d764 *build/vignette.rds
+89a5a8b3ef20f7f4222c84267fc74f5b *data/envData.rda
+2a65eb3c9c68ed85d409dc73250a2d81 *inst/doc/MiRSEA.R
 eefe34ceeeb184c1e87fc73047b2d619 *inst/doc/MiRSEA.Rnw
-853d678654a7d4c419a415962da06c52 *inst/doc/MiRSEA.pdf
+137a4f3287dd468c420441956d7560f2 *inst/doc/MiRSEA.pdf
 6339a1fa314fe58b60bb595db12c453a *inst/localdata/example.cls.cls
 9afd9139af05e7d085da736836d3c8ec *inst/localdata/example.gct
 443c93fd36d0a6fa6dff1d97bec64689 *man/Corrp2miRfile.Rd
